@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/month_rl_Statistics"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/month_tv_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Num"
+        android:textColor="@color/colorGray"
+        app:layout_textSizePercent="@string/month_tv_sizePercent" />
+
+    <!-- *** TOAT : small *** -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/month_rl_small"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/month_tv_statistics"
+        app:layout_marginLeftPercent="@string/month_rec_marginPercent"
+        app:layout_marginRightPercent="@string/month_rec_marginPercent"
+        app:layout_widthPercent="@string/month_rec_widthPercent">
+
+        <!-- green -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/month_rl_green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            app:layout_heightPercent="@string/month_rlBlue_heightPercent"
+            app:layout_marginBottomPercent="@string/month_rlBlue_marginBottomPercent"
+            app:layout_widthPercent="@string/month_rlBlue_widthPercent">
+
+            <ImageView
+                android:id="@+id/month_iv_bottom_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_gray_light"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+            <ImageView
+                android:id="@+id/month_iv_progress_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_bottom_green"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorGreen" />
+
+            <ImageView
+                android:id="@+id/month_iv_top_green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_progress_green"
+                android:layout_centerHorizontal="true"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_gray_light"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- orange -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/month_rl_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            app:layout_heightPercent="@string/month_rlBlue_heightPercent"
+            app:layout_marginBottomPercent="@string/month_rlBlue_marginBottomPercent"
+            app:layout_widthPercent="@string/month_rlBlue_widthPercent">
+
+            <ImageView
+                android:id="@+id/month_iv_bottom_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_orange_light"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+            <ImageView
+                android:id="@+id/month_iv_progress_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_bottom_orange"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorOrange" />
+
+            <ImageView
+                android:id="@+id/month_iv_top_orange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_progress_orange"
+                android:layout_centerHorizontal="true"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_orange_light"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- blue -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/month_rl_blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            app:layout_heightPercent="@string/month_rlBlue_heightPercent"
+            app:layout_marginBottomPercent="@string/month_rlBlue_marginBottomPercent"
+            app:layout_widthPercent="@string/month_rlBlue_widthPercent">
+
+            <ImageView
+                android:id="@+id/month_iv_bottom_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_blue_light"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+            <ImageView
+                android:id="@+id/month_iv_progress_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_bottom_blue"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorBlue" />
+
+            <ImageView
+                android:id="@+id/month_iv_top_blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_progress_blue"
+                android:layout_centerHorizontal="true"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_blue_light"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- *** TOAT : big *** -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/month_rl_big"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/month_tv_statistics"
+        app:layout_marginLeftPercent="@string/month_rec_marginPercent"
+        app:layout_marginRightPercent="@string/month_rec_marginPercent"
+        android:visibility="gone"
+        app:layout_widthPercent="@string/month_rec_widthPercent">
+
+        <!-- green -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/month_rl_green_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            app:layout_heightPercent="@string/month_rlBlue_heightPercent"
+            app:layout_marginBottomPercent="@string/month_rlBlue_marginBottomPercent"
+            app:layout_widthPercent="@string/month_rlBlue_widthPercent_big">
+
+            <ImageView
+                android:id="@+id/month_iv_bottom_green_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_gray_dark"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+            <ImageView
+                android:id="@+id/month_iv_progress_green_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_bottom_green_big"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorGreenDark" />
+
+            <ImageView
+                android:id="@+id/month_iv_top_green_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_progress_green_big"
+                android:layout_centerHorizontal="true"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_gray_dark"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- orange -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/month_rl_orange_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            app:layout_heightPercent="@string/month_rlBlue_heightPercent"
+            app:layout_marginBottomPercent="@string/month_rlBlue_marginBottomPercent"
+            app:layout_widthPercent="@string/month_rlBlue_widthPercent_big">
+
+            <ImageView
+                android:id="@+id/month_iv_bottom_orange_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_orange_dark"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+            <ImageView
+                android:id="@+id/month_iv_progress_orange_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_bottom_orange_big"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorOrangeDark" />
+
+            <ImageView
+                android:id="@+id/month_iv_top_orange_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_progress_orange_big"
+                android:layout_centerHorizontal="true"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_orange_dark"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- blue -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:id="@+id/month_rl_blue_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            app:layout_heightPercent="@string/month_rlBlue_heightPercent"
+            app:layout_marginBottomPercent="@string/month_rlBlue_marginBottomPercent"
+            app:layout_widthPercent="@string/month_rlBlue_widthPercent_big">
+
+            <ImageView
+                android:id="@+id/month_iv_bottom_blue_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_blue_dark"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+            <ImageView
+                android:id="@+id/month_iv_progress_blue_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_bottom_blue_big"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@color/colorBlueDark" />
+
+            <ImageView
+                android:id="@+id/month_iv_top_blue_big"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/month_iv_progress_blue_big"
+                android:layout_centerHorizontal="true"
+                android:rotation="180"
+                android:scaleType="fitXY"
+                android:src="@drawable/head_blue_dark"
+                app:layout_heightPercent="@string/month_ivBlue_heightPercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

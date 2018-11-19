@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <!-- day widget -->
+    <com.nb20_statistics.nb20_statistics.engine.day.StatisticsDayWidget
+        android:id="@+id/wd_day_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="@string/all_sw_heightPercent"
+        app:layout_widthPercent="@string/all_sw_widthPercent" />
+
+    <!-- week widget -->
+    <com.nb20_statistics.nb20_statistics.engine.week.StatisticsWeekWidget
+        android:id="@+id/wd_week_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="@string/all_sw_heightPercent"
+        app:layout_widthPercent="@string/all_sw_widthPercent" />
+
+    <!-- month widget -->
+    <com.nb20_statistics.nb20_statistics.engine.month.StatisticsMonthWidget
+        android:id="@+id/wd_Month_statistics"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="@string/all_sw_heightPercent"
+        app:layout_widthPercent="@string/all_sw_widthPercent" />
+
+    <!-- 测试按钮组 -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+
+        android:id="@+id/rl_button"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="10%h">
+
+        <Button
+            android:onClick="setDay"
+            android:id="@+id/bt_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAY" />
+
+        <Button
+            android:onClick="setWeek"
+            android:layout_marginStart="20dp"
+            android:id="@+id/bt_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bt_day"
+            android:text="WEEK" />
+
+        <Button
+            android:onClick="setMonth"
+            android:layout_marginStart="20dp"
+            android:id="@+id/bt_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bt_week"
+            android:text="MONTH" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>

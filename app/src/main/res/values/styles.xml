@@ -1,0 +1,119 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <!-- TOAT: 总布局 -->
+    <!-- 总布局占高比 -->
+    <string name="all_sw_heightPercent">60%h</string>
+    <!-- 总布局占宽比 -->
+    <string name="all_sw_widthPercent">100%w</string>
+    <!-- 余量倍率 -->
+    <string name="remained_rate">1.2</string>
+
+    <!-- TOAT: info -->
+    <!-- info 面板占高 -->
+    <string name="info_heightPercents">9%sh</string>
+    <!-- info 图标宽高比 -->
+    <string name="info_icon_heightWidthPercent">30%h</string>
+    <!-- info 图标间距 -->
+    <dimen name="info_tv_des_marginstart">10dp</dimen>
+    <!-- info 标题大小占比 -->
+    <string name="info_tv_des_textSizePercent">25%h</string>
+    <!-- info 时间文本占比 -->
+    <string name="info_tv_time_textSizePercent">35%h</string>
+
+    <!-- TOAT: banner -->
+    <!-- banner 面板顶部间距 -->
+    <string name="banner_margintopPercent">2%sh</string>
+    <!-- banner 面板占高比 -->
+    <string name="banner_heightPercent">5%sh</string>
+    <!-- banner 字体大小占比 -->
+    <string name="banner_tv_textsizePercent">3%sw</string>
+    <!-- banner 字体左右间距 -->
+    <dimen name="banner_marginStartAndEnd">10dp</dimen>
+    <!-- banner 图标大小占比 -->
+    <string name="banner_iv_widthAndHeightPercent">30%h</string>
+
+    <!-- TOAT: Play & Walk 布局 -->
+    <!-- Play & Walk 占高 -->
+    <string name="play_walk_heightPercent">5%sh</string>
+    <!-- Play & Walk 字体左间距 -->
+    <dimen name="play_walk_marginStart">10dp</dimen>
+    <!-- Play & Walk 字体右间距 -->
+    <dimen name="play_walk_marginEnd">10dp</dimen>
+    <!-- Play & Walk 字体大小 -->
+    <string name="play_walk_tv_textsizePercent">3%sw</string>
+
+    <!-- *** TOAT: ITEM DAY *** -->
+    <!-- 字体大小 -->
+    <string name="day_tv_sizePercent">3%sw</string>
+    <!-- 字体高度 -->
+    <string name="day_tv_heightPercent">4%sh</string>
+    <!-- 总条目占宽比 -->
+    <string name="day_rec_widthPercent">6%sw</string>
+    <!-- 总条目间距 -->
+    <dimen name="day_rec_marginPercent">15dp</dimen>
+    <string name="day_rec_marginPercent">2.625%sw</string>
+    <!-- 进度条占高比 -->
+    <string name="day_rlBlue_heightPercent">100%h</string>
+    <!-- 进度条占宽比(小:修改进度条粗细) -->
+    <string name="day_rlBlue_widthPercent">85%w</string>
+    <!-- 进度条占宽比(大:修改进度条粗细) -->
+    <string name="day_rlBlue_widthPercent_big">95%w</string>
+    <!-- 进度条底部间距占高比 -->
+    <string name="day_rlBlue_marginBottomPercent">10%w</string>
+    <!-- 进度半圆占宽比 -->
+    <string name="day_ivBlue_heightPercent">50%w</string>
+
+    <!-- *** TOAT: ITEM WEEK *** -->
+    <!-- 字体大小 -->
+    <string name="week_tv_sizePercent">3%sw</string>
+    <!-- 总条目占宽比 -->
+    <string name="week_rec_widthPercent">6%sw</string>
+    <!-- 总条目间距 -->
+    <dimen name="week_rec_marginPercent">15dp</dimen>
+    <string name="week_rec_marginPercent">3.43%sw</string>
+    <!-- 进度条占高比 -->
+    <string name="week_rlBlue_heightPercent">100%h</string>
+    <!-- 进度条占宽比(小:修改进度条粗细) -->
+    <string name="week_rlBlue_widthPercent">85%w</string>
+    <!-- 进度条占宽比(大:修改进度条粗细) -->
+    <string name="week_rlBlue_widthPercent_big">95%w</string>
+    <!-- 进度条底部间距占高比 -->
+    <string name="week_rlBlue_marginBottomPercent">10%w</string>
+    <!-- 进度半圆占宽比 -->
+    <string name="week_ivBlue_heightPercent">50%w</string>
+
+    <!-- *** TOAT: ITEM MONTH *** -->
+    <!-- 字体大小 -->
+    <string name="month_tv_sizePercent">2.5%sw</string>
+    <!-- 总条目占宽比 -->
+    <string name="month_rec_widthPercent">2.2%sw</string>
+    <!-- 总条目间距 -->
+    <dimen name="month_rec_marginPercent">15dp</dimen>
+    <string name="month_rec_marginPercent">0.42%sw</string>
+    <!-- 进度条占高比 -->
+    <string name="month_rlBlue_heightPercent">100%h</string>
+    <!-- 进度条占宽比(小:修改进度条粗细) -->
+    <string name="month_rlBlue_widthPercent">85%w</string>
+    <!-- 进度条占宽比(大:修改进度条粗细) -->
+    <string name="month_rlBlue_widthPercent_big">95%w</string>
+    <!-- 进度条底部间距占高比 -->
+    <string name="month_rlBlue_marginBottomPercent">10%w</string>
+    <!-- 进度半圆占宽比 -->
+    <string name="month_ivBlue_heightPercent">50%w</string>
+
+    <!-- *** TOAT: GOAL LINE ***  -->
+    <!-- 目标线 布局占高 -->
+    <string name="goalline_heightPercent">3%sh</string>
+    <!-- 目标线 布局右间距 -->
+    <dimen name="goalline_tv_maginEnd">5dp</dimen>
+    <!-- 目标线 字体左内距 -->
+    <dimen name="goalline_tv_paddingStart">5dp</dimen>
+    <!-- 目标线 字体右内距 -->
+    <dimen name="goalline_tv_paddingEnd">5dp</dimen>
+    <!-- 目标线 字体大小 -->
+    <string name="goalline_tv_textsizePercent">40%h</string>
+    <!-- 目标线 线宽 -->
+    <dimen name="goalline_line_height">1dp</dimen>
+</resources>
