@@ -6,9 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
-
+    
     <!-- day widget -->
-    <com.nb20_statistics.nb20_statistics.engine.day.StatisticsDayWidget
+    <com.nb20.statistics.engine.day.StatisticsDayWidget
         android:id="@+id/wd_day_statistics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         app:layout_widthPercent="@string/all_sw_widthPercent" />
 
     <!-- week widget -->
-    <com.nb20_statistics.nb20_statistics.engine.week.StatisticsWeekWidget
+    <com.nb20.statistics.engine.week.StatisticsWeekWidget
         android:id="@+id/wd_week_statistics"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,7 +26,7 @@
         app:layout_widthPercent="@string/all_sw_widthPercent" />
 
     <!-- month widget -->
-    <com.nb20_statistics.nb20_statistics.engine.month.StatisticsMonthWidget
+    <com.nb20.statistics.engine.month.StatisticsMonthWidget
         android:id="@+id/wd_Month_statistics"
         android:layout_width="wrap_content"
         android:layout_centerVertical="true"

@@ -1,0 +1,123 @@
+API DOC: 
+
+<PART 1:>
+需求:
+如果需要增加其他的统计图, 按照如下步骤执行
+1.复制粘贴string.xml里的指定内容,如下
+
+    <!-- *** TOAT: ITEM DAY *** -->
+    <!-- 字体大小 -->
+    <string name="day_tv_sizePercent">3%sw</string>
+    <!-- 字体高度 -->
+    <string name="day_tv_heightPercent">4%sh</string>
+    <!-- 总条目占宽比 -->
+    <string name="day_rec_widthPercent">6%sw</string>
+    <!-- 总条目间距 -->
+    <dimen name="day_rec_marginPercent">15dp</dimen>
+    <string name="day_rec_marginPercent">2.625%sw</string>
+    <!-- 进度条占高比 -->
+    <string name="day_rlBlue_heightPercent">100%h</string>
+    <!-- 进度条占宽比(小:修改进度条粗细) -->
+    <string name="day_rlBlue_widthPercent">85%w</string>
+    <!-- 进度条占宽比(大:修改进度条粗细) -->
+    <string name="day_rlBlue_widthPercent_big">95%w</string>
+    <!-- 进度条底部间距占高比 -->
+    <string name="day_rlBlue_marginBottomPercent">10%w</string>
+    <!-- 进度半圆占宽比 -->
+    <string name="day_ivBlue_heightPercent">50%w</string>
+    
+** 替换前缀「day_」
+
+2.复制layout下的item_statistics_day.xml布局并改名, 一般建议修改「_day」即可
+
+3.打开复制后的布局, 替换「day_」为指定名字, 建议与第一步的前缀保持一致
+
+4.在「com.nb20_statistics.nb20_statistics.engine」下新建一个目录,并复制
+「com.nb20_statistics.nb20_statistics.engine.day」目录下所有的文件到新的目录当中
+
+5.对刚复制的文件进行改名,建议把「Day」替换成语第一步的前缀一致
+
+6.对刚复制的文件名中带Holder字样的文件进行打开, 如StatisticsWeekHolder.java
+替换当中「day_」为指定前缀, 注意: 这个前缀必须与第三步的指定名字一致
+
+7.对刚复制的文件名中带Widget字样的文件进行打开, 找到getSizeFromAttr()方法
+修改「// 属性占比」一组的所有引用, 最快捷的方法还是针对前缀「day_」进行修改, 修改与第一步的前缀一致
+
+<PART 2:>
+
+[Bean name]
+    StatisticsBean.java
+        private String colValue;// 列名(条目下方显示)
+        private int progressBlue;// 蓝色进度值(测试时可用, 生产环境下会根据playtime计算)
+        private int progressOrange;// 橙色进度值(测试时可用, 生产环境下会根据walktime计算)
+        private boolean isClick;// 是否被点击(T:可点, F:不可点)
+        private Date sportDate;// 运动日期
+        private int playTime;// play时间(分钟)
+        private int walkTime;// walk时间(分钟)
+        
+----------------------------------------------------------------------------------------------------
+
+[Widget name]
+    StatisticsDayWidget.java
+[Use] 
+    <1> xml
+    <com.nb20_statistics.nb20_statistics.engine.day.StatisticsDayWidget
+        android:id="@+id/wd_day_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="60%h"
+        app:layout_widthPercent="100%w" />
+    
+    <2> findViewById
+    @BindView(R.id.wd_day_statistics)
+    StatisticsDayWidget wdDayStatistics;// 日视图
+
+[Method]
+    wdDayStatistics.setGoal( @int mins ) : mins 分钟数
+    wdDayStatistics.setStatistics( @List<Statistics> datas) : StatisticsBean集合
+    
+----------------------------------------------------------------------------------------------------
+
+[Widget name]
+    StatisticsWeekWidget.java
+[Use] 
+    <1> xml
+    <com.nb20_statistics.nb20_statistics.engine.week.StatisticsWeekWidget
+        android:id="@+id/wd_week_statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:layout_heightPercent="60%h"
+        app:layout_widthPercent="100%w" />
+    
+    <2> findViewById
+    @BindView(R.id.wd_week_statistics)
+    StatisticsWeekWidget wdWeekStatistics;// 周视图
+
+[Method]
+    wdDayStatistics.setGoal( @int mins ) : mins 分钟数
+    wdDayStatistics.setStatistics( @List<Statistics> datas) : StatisticsBean集合
+    
+----------------------------------------------------------------------------------------------------
+
+[Widget name]
+    StatisticsMonthWidget.java
+[Use] 
+    <1> xml
+    <com.nb20_statistics.nb20_statistics.engine.month.StatisticsMonthWidget
+        android:id="@+id/wd_Month_statistics"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"
+        app:layout_heightPercent="60%h"
+        app:layout_widthPercent="100%w" />
+    
+    <2> findViewById
+    @BindView(R.id.wd_Month_statistics)
+    StatisticsMonthWidget wdMonthStatistics;// 月视图
+
+[Method]
+    wdDayStatistics.setGoal( @int mins ) : mins 分钟数
+    wdDayStatistics.setStatistics( @List<Statistics> datas) : StatisticsBean集合
+    wdDayStatistics.setMonthDes(@int monthDes) : 月份, 如: 5, 7

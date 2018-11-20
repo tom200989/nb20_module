@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">nb20_statistics</string>
+
+    <!-- 国际化字符: 20181116 -->
+    <string name="banner_play">Play</string>
+    <string name="banner_walk">Walk</string>
+    <string name="banner_rest">Rest</string>
+    <string name="banner_ExceriseMin">Excerise / mins</string>
+    <string name="banner_Excerisehours">Excerise / hours</string>
+    <string name="goal_mins">Goal: %1$d mins</string>
+    <string name="goal_hours">Goal: %1$d hours</string>
+    <string name="h">h</string>
+    <string name="m">m</string>
+    <string name="mins">mins</string>
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="June">June</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+    <string name="Sunday">Sun</string>
+    <string name="Monday">Mon</string>
+    <string name="Tuesday">Tue</string>
+    <string name="Wednesday">Wed</string>
+    <string name="Thursday">Thur</string>
+    <string name="Friday">Fri</string>
+    <string name="Saturday">Sat</string>
+    <string name="day">day</string>
+    <string name="week">week</string>
+    <string name="month">month</string>
+    
+</resources>

@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <!-- TOAT: item info -->
+    <com.zhy.android.percent.support.PercentLinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_heightPercent="@string/info_heightPercents">
+
+        <!-- play info -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:layout_widthPercent="33.33%w">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_info_play_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_info_play_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_play_info"
+                    app:layout_heightPercent="@string/info_icon_heightWidthPercent"
+                    app:layout_widthPercent="@string/info_icon_heightWidthPercent" />
+
+                <TextView
+                    android:id="@+id/tv_info_play_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/info_tv_des_marginstart"
+                    android:layout_toEndOf="@id/iv_info_play_icon"
+                    android:text="@string/banner_play"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    app:layout_textSizePercent="@string/info_tv_des_textSizePercent" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_info_play_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_info_play_des"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="0.0h"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                app:layout_textSizePercent="@string/info_tv_time_textSizePercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- walk info -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:layout_widthPercent="33.33%w">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_info_walk_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_info_walk_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_walk_info"
+                    app:layout_heightPercent="@string/info_icon_heightWidthPercent"
+                    app:layout_widthPercent="@string/info_icon_heightWidthPercent" />
+
+                <TextView
+                    android:id="@+id/tv_info_walk_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/iv_info_walk_icon"
+                    android:text="@string/banner_walk"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    app:layout_textSizePercent="@string/info_tv_des_textSizePercent" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_info_walk_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_info_walk_des"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="0.0h"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                app:layout_textSizePercent="@string/info_tv_time_textSizePercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+        <!-- rest info -->
+        <com.zhy.android.percent.support.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:layout_widthPercent="33.33%w">
+
+            <com.zhy.android.percent.support.PercentRelativeLayout
+                android:id="@+id/rl_info_rest_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_info_rest_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_rest_info"
+                    app:layout_heightPercent="@string/info_icon_heightWidthPercent"
+                    app:layout_widthPercent="@string/info_icon_heightWidthPercent" />
+
+                <TextView
+                    android:id="@+id/tv_info_rest_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@id/iv_info_rest_icon"
+                    android:text="@string/banner_rest"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"
+                    app:layout_textSizePercent="@string/info_tv_des_textSizePercent" />
+
+            </com.zhy.android.percent.support.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_info_rest_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_info_rest_des"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:text="0.0h"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                app:layout_textSizePercent="@string/info_tv_time_textSizePercent" />
+
+        </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    </com.zhy.android.percent.support.PercentLinearLayout>
+
+    <!-- TOAT: banner -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_info"
+        app:layout_heightPercent="@string/banner_heightPercent"
+        app:layout_marginTopPercent="@string/banner_margintopPercent">
+
+        <ImageView
+            android:id="@+id/iv_widget_banner_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/banner_marginStartAndEnd"
+            android:scaleType="fitXY"
+            android:src="@drawable/dot_play"
+            app:layout_heightPercent="@string/banner_iv_widthAndHeightPercent"
+            app:layout_widthPercent="@string/banner_iv_widthAndHeightPercent" />
+
+        <TextView
+            android:id="@+id/tv_widget_banner_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/banner_marginStartAndEnd"
+            android:layout_toEndOf="@id/iv_widget_banner_play"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/banner_play"
+            android:textColor="@color/colorGray"
+            app:layout_textSizePercent="@string/banner_tv_textsizePercent" />
+
+        <ImageView
+            android:id="@+id/iv_widget_banner_walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/banner_marginStartAndEnd"
+            android:layout_toEndOf="@id/tv_widget_banner_play"
+            android:scaleType="fitXY"
+            android:src="@drawable/dot_walk"
+            app:layout_heightPercent="@string/banner_iv_widthAndHeightPercent"
+            app:layout_widthPercent="@string/banner_iv_widthAndHeightPercent" />
+
+        <TextView
+            android:id="@+id/tv_widget_banner_walk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/banner_marginStartAndEnd"
+            android:layout_toEndOf="@id/iv_widget_banner_walk"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/banner_walk"
+            android:textColor="@color/colorGray"
+            app:layout_textSizePercent="@string/banner_tv_textsizePercent" />
+
+        <ImageView
+            android:id="@+id/iv_widget_banner_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/banner_marginStartAndEnd"
+            android:layout_toEndOf="@id/tv_widget_banner_walk"
+            android:scaleType="fitXY"
+            android:src="@drawable/dot_rest"
+            app:layout_heightPercent="@string/banner_iv_widthAndHeightPercent"
+            app:layout_widthPercent="@string/banner_iv_widthAndHeightPercent" />
+
+        <TextView
+            android:id="@+id/tv_widget_banner_rest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/banner_marginStartAndEnd"
+            android:layout_toEndOf="@id/iv_widget_banner_rest"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@string/banner_rest"
+            android:textColor="@color/colorGray"
+            app:layout_textSizePercent="@string/banner_tv_textsizePercent" />
+
+        <TextView
+            android:id="@+id/tv_widget_excerise_min_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/banner_marginStartAndEnd"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="Excerise / hour"
+            android:textColor="@color/colorBlack"
+            app:layout_textSizePercent="@string/banner_tv_textsizePercent" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- TOAT: Play & Walk sport time-->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_play_walk_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_banner"
+        android:background="@color/colorPlayWalk"
+        android:visibility="invisible"
+        app:layout_heightPercent="@string/play_walk_heightPercent">
+
+        <TextView
+            android:id="@+id/tv_sport_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/play_walk_marginStart"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="1 April 2018"
+            android:textColor="@color/colorGray"
+            app:layout_textSizePercent="@string/play_walk_tv_textsizePercent" />
+
+        <TextView
+            android:id="@+id/tv_play_walk_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/play_walk_marginEnd"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="play: 0 mins walk: 0 h 0 mins"
+            android:textColor="@color/colorGray"
+            app:layout_textSizePercent="@string/play_walk_tv_textsizePercent" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- TOAT: Statistics -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_rcv_info_andSoOn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_play_walk_time"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_marginTopPercent="4%h">
+
+        <!-- rcv -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_widget_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/colorWhite"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+        <!-- month text -->
+        <TextView
+            android:id="@+id/tv_widget_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/colorGray"
+            app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+        <!-- min coodinary-->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_widget_min_coodinary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_widthPercent="10%w">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="60"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="50"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="40"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="30"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="20"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="10"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+        <!-- hour coodinary -->
+        <com.zhy.android.percent.support.PercentLinearLayout
+            android:id="@+id/ll_widget_hour_coodinary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_widthPercent="10%w">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="24"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="21"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="18"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="15"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="12"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="9"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="6"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="3"
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/colorGray"
+                app:layout_textSizePercent="@string/day_tv_sizePercent" />
+
+        </com.zhy.android.percent.support.PercentLinearLayout>
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+    <!-- TOAT: Goal Line -->
+    <com.zhy.android.percent.support.PercentRelativeLayout
+        android:id="@+id/rl_goal_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_heightPercent="@string/goalline_heightPercent">
+
+        <TextView
+            android:id="@+id/tv_goal_line"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/goalline_tv_maginEnd"
+            android:background="@drawable/bg_goalline"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingStart="@dimen/goalline_tv_paddingStart"
+            android:paddingEnd="@dimen/goalline_tv_paddingEnd"
+            android:text="@string/goal_hours"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_textSizePercent="@string/goalline_tv_textsizePercent" />
+
+        <View
+            android:id="@+id/v_goalline"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/goalline_line_height"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/tv_goal_line"
+            android:background="@color/colorGoalLine" />
+
+    </com.zhy.android.percent.support.PercentRelativeLayout>
+
+</com.zhy.android.percent.support.PercentRelativeLayout>
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- statistics colors -->
+    <color name="colorGray">#999999</color>
+    <color name="colorBlue">#8cc2ff</color>
+    <color name="colorBlueDark">#51a3ff</color>
+    <color name="colorOrange">#ffc496</color>
+    <color name="colorOrangeDark">#fea560</color>
+    <color name="colorGreen">#dadada</color>
+    <color name="colorGreenDark">#b7b7b7</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPlayWalk">#d7e8ff</color>
+    <color name="colorGoalLine">#d7e8ff</color>
+    <color name="colorGoalLineTextbg">#99d7e8ff</color>
+</resources>

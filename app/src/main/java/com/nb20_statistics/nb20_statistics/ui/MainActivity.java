@@ -4,12 +4,12 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.nb20.statistics.bean.StatisticsBean;
+import com.nb20.statistics.engine.day.StatisticsDayWidget;
+import com.nb20.statistics.engine.month.StatisticsMonthWidget;
+import com.nb20.statistics.engine.week.StatisticsWeekWidget;
+import com.nb20.statistics.utils.StatisticsUtils;
 import com.nb20_statistics.nb20_statistics.R;
-import com.nb20_statistics.nb20_statistics.bean.StatisticsBean;
-import com.nb20_statistics.nb20_statistics.engine.day.StatisticsDayWidget;
-import com.nb20_statistics.nb20_statistics.engine.month.StatisticsMonthWidget;
-import com.nb20_statistics.nb20_statistics.engine.week.StatisticsWeekWidget;
-import com.nb20_statistics.nb20_statistics.utils.StatisticsUtils;
 
 import java.util.ArrayList;
 import java.util.Date;
