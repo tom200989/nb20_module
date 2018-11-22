@@ -9,7 +9,7 @@ import com.nb20.statistics.engine.day.StatisticsDayWidget;
 import com.nb20.statistics.engine.month.StatisticsMonthWidget;
 import com.nb20.statistics.engine.week.StatisticsWeekWidget;
 import com.nb20.statistics.utils.StatisticsUtils;
-import com.nb20_module.nb20_statistics.R;
+import com.nb20_statistics.nb20_statistics.R;
 
 import java.util.ArrayList;
 import java.util.Date;

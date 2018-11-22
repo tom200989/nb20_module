@@ -7,7 +7,7 @@ import android.os.MessageQueue;
 import android.util.Log;
 import android.widget.Button;
 
-import com.nb20_module.nb20_statistics.R;
+import com.nb20_statistics.nb20_statistics.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
