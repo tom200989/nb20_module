@@ -8,9 +8,10 @@ import com.nb20_statistics.nb20_statistics.R;
 
 public class WheelActivity extends Activity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_smooth);
+        setContentView(R.layout.activity_wheel);
     }
 }

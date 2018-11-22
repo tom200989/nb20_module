@@ -1,1 +1,1 @@
-include ':app',':statistics'
+include ':app', ':statistics', ':nb20_slidedrawer'

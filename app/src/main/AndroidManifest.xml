@@ -13,11 +13,11 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name="com.nb20_module.nb20_statistics.ui.StatisticsActivity">
+
         </activity>
         <activity android:name="com.nb20_module.nb20_IdelHandler.ui.IdleHandlerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
