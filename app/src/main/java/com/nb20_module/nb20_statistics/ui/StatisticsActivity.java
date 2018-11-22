@@ -1,4 +1,4 @@
-package com.nb20_statistics.nb20_statistics.ui;
+package com.nb20_module.nb20_statistics.ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import com.nb20.statistics.engine.day.StatisticsDayWidget;
 import com.nb20.statistics.engine.month.StatisticsMonthWidget;
 import com.nb20.statistics.engine.week.StatisticsWeekWidget;
 import com.nb20.statistics.utils.StatisticsUtils;
-import com.nb20_statistics.nb20_statistics.R;
+import com.nb20_module.nb20_statistics.R;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -18,7 +18,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends Activity {
+public class StatisticsActivity extends Activity {
 
     @BindView(R.id.wd_day_statistics)
     StatisticsDayWidget wdDayStatistics;// 日视图
@@ -48,6 +48,13 @@ public class MainActivity extends Activity {
         wdMonthStatistics.setGoal(15 * 60);
 
         transfer(0);
+    }
+    
+    
+
+    @Override
+    protected void onResume() {
+        super.onResume();
     }
 
     /**
